@@ -37,6 +37,9 @@ header {
     align-items: center;
     text-align: center;
     transition: transform 0.3s ease;
+    flex: 1; /* gör att alla kort tar lika mycket plats */
+    max-width: 350px; /* begränsar maxbredden */
+    min-height: 300px; /* säkerställer höjden */
 }
 
 .card:hover {
@@ -69,4 +72,26 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+
+/* Mediaquery för mindre skärmar */
+@media only screen and (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+        flex: none; /* tar bort flex på mobil*/
+        min-height: auto;
+    }
+
+    header {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
 }
