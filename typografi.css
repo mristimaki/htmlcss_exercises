@@ -1,10 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 p {
     font-family: "Source Sans 3", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 h1, h2, h3 {
     font-family: "Playfair Display", serif;
+    margin-top: 1rem;
 }
 
 h1 {
@@ -19,16 +26,28 @@ h3 {
     font-size: clamp(1rem, 2.5vw, 1.6rem);
 }
 
+nav {
+    margin-left: 2rem;
+}
+
+.subtitle {
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+#main-wrapper {
+    margin-left: 1rem;
+}
 
 /* Mediaqueries -------------------------------*/
 @media only screen and (max-width: 320px) {
     p {
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 }
 
 @media screen and (max-width: 768px) {
     p {
-        font-size: 0.75rem;
+        font-size: 0.9rem;
     }
 }
