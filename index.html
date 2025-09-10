@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML and CSS Exercises</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!-- Det här kommer endast vara för olika övningar under skoltid -->
+     <!-- Byt branch till 'main' istället för 'master' -->
+    <body>
+
+        <!-- Gör färdigt navbar med länkar horisontellt -->
+        <nav class="main-nav">
+            <div class="nav-container">
+                <ul id="nav-list">
+                    <li class="nav-links">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">About</a>
+                    </li>
+                    <li class="nav-links">
+                        <a href="#">Shop</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Övningar Vecka 1 -->
+        <main>
+            <!-- 
+            Nedladdning, vet inte om jag utfört uppgiften korrekt? 
+            Jag har tagit hjälp av W3Schools för att göra bilden nedladdningsbar.
+            -->
+            <div>
+                <a href="https://github.com/EVSFEH25P-HTMLCSS/exercises/tree/main" target="_blank">Link to excercises</a>
+            </div>
+            <div id="exerciseone">
+                <h2 class="text-white headers">Klick on the image to download it</h2>
+                <a href="/images/Frontend-vs-Backend.png" download>
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.seobility.net%2Fen%2Fwiki%2Fimages%2Fthumb%2F0%2F04%2FFrontend-vs-Backend.png%2F675px-Frontend-vs-Backend.png&f=1&nofb=1&ipt=68fd05fa9ba6558bc2143e59bca7649a037b3715fa60e37a9e734489d32b17c2&ipo=images" alt="Downloadable image Frontend vs Backend" width="300">
+                </a>
+            </div>
+            <!--
+            Interna länkar.
+            Lägg in följande HTML kod som innehåller information från Wikipedia. Lägg till tre länkar i början av dokumentet som kan användas för att hoppa mellan alla rubriker på sidan (HTML, History och Markup).
+            -->
+            <div id="exercisetwo">
+                <div class="links">
+                    <a href="#rubrik1">HTML</a>
+                    <a href="#rubrik2">History</a>
+                    <a href="#rubrik3">Markup</a>
+                </div>
+
+                <section id="rubrik1" class="text-white">
+                    <h2>HTML</h2>
+
+                    <p>
+                    The HyperText Markup Language or HTML is the standard markup language for
+                    documents designed to be displayed in a web browser. It defines the meaning
+                    and structure of web content. It is often assisted by technologies such as
+                    Cascading Style Sheets (CSS) and scripting languages such as JavaScript. Web
+                    browsers receive HTML documents from a web server or from local storage and
+                    render the documents into multimedia web pages. HTML describes the structure
+                    of a web page semantically and originally included cues for its appearance.
+                    HTML elements are the building blocks of HTML pages. With HTML constructs,
+                    images and other objects such as interactive forms may be embedded into the
+                    rendered page. HTML provides a means to create structured documents by
+                    denoting structural semantics for text such as headings, paragraphs, lists,
+                    links, quotes, and other items. HTML elements are delineated by tags, written
+                    using angle brackets. Tags such as `img` and `input` directly introduce
+                    content into the page. Other tags such as `p` and `/p` surround and provide
+                    information about document text and may include sub-element tags. Browsers do
+                    not display the HTML tags but use them to interpret the content of the page.
+                    HTML can embed programs written in a scripting language such as JavaScript,
+                    which affects the behavior and content of web pages. The inclusion of CSS
+                    defines the look and layout of content. The World Wide Web Consortium (W3C),
+                    former maintainer of the HTML and current maintainer of the CSS standards, has
+                    encouraged the use of CSS over explicit presentational HTML since 1997.[2] A
+                    form of HTML, known as HTML5, is used to display video and audio, primarily
+                    using the `canvas` element, together with JavaScript.
+                    </p>
+                </section>
+            
+                <section id="rubrik2" class="text-white">
+                    <h2>History</h2>
+
+                    <p>
+                    In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and
+                    prototyped ENQUIRE, a system for CERN researchers to use and share documents.
+                    In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext
+                    system.[3] Berners-Lee specified HTML and wrote the browser and server
+                    software in late 1990. That year, Berners-Lee and CERN data systems engineer
+                    Robert Cailliau collaborated on a joint request for funding, but the project
+                    was not formally adopted by CERN. In his personal notes of 1990, Berners-Lee
+                    listed "some of the many areas in which hypertext is used"; an encyclopedia is
+                    the first entry.[4] The first publicly available description of HTML was a
+                    document called "HTML Tags",[5] first mentioned on the Internet by Tim
+                    Berners-Lee in late 1991.[6][7] It describes 18 elements comprising the
+                    initial, relatively simple design of HTML. Except for the hyperlink tag, these
+                    were strongly influenced by SGMLguid, an in-house Standard Generalized Markup
+                    Language (SGML)-based documentation format at CERN. Eleven of these elements
+                    still exist in HTML 4.[8]
+                    </p>
+                </section>
+
+                <section id="rubrik3" class="text-white">
+                    <h2>Markup</h2>
+
+                    <p>
+                    HTML markup consists of several key components, including those called tags
+                    (and their attributes), character-based data types, character references and
+                    entity references. HTML tags most commonly come in pairs like `h1` and `h1`,
+                    although some represent empty elements and so are unpaired, for example `img`.
+                    The first tag in such a pair is the start tag, and the second is the end tag
+                    (they are also called opening tags and closing tags). Another important
+                    component is the HTML document type declaration, which triggers standards mode
+                    rendering.
+                    </p>
+                </section>
+            </div>
+
+            <!-- Numrerade och Onumrerade listor -->
+            <div id="exercisethree" class="text-white">
+                <h2>Top 5 programming languages</h2>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                </ol>
+
+                <h2>5 common HTML &lt;tags&gt;</h2>
+                <ul>
+                    <li>&lt;html&gt;</li>
+                    <li>&lt;head&gt;</li>
+                    <li>&lt;body&gt;</li>
+                    <li>&lt;div&gt;</li>
+                    <li>&lt;a&gt;</li>
+                </ul>
+            </div>
+
+            <!-- Bold, Details och Dropdown -->
+            <div id="exercisefour" class="text-white">
+                <!-- 
+                <b> taggen gör din text tjock, utan att behöva använda css.
+                man kan även använda <strong> för att få texten tjock och det
+                ger även en semantisk betydelse, <strong> signalerar att innehållet 
+                har stor vikt för webbplatser, sökmotorer och skärmläsare.
+                -->
+                <p><b>HTML is a markup language.</b></p>
+                
+                <!-- Gör en 'hint' komponent med HTML, med hjälp av <details> -->
+                <details>
+                    <summary>Click here to read a fun fact about HTML</summary>
+                    <p>The very first website in the world (created by Tim Berners-Lee in 1991) was built in HTML, and it's still online today! 🌐 It was just simple text with links, completely without images or colors.
+                    <br>
+                    Here's the link to the world's very first website: <a href="https://info.cern.ch/" target="_blank">Visit the first website</a>
+                    <br>
+                    On that page, you can browse the original version, either directly or through a so-called “line-mode browser” simulator — just like people did at the very beginning of the web.
+                    </p>
+                </details>
+                <br>
+                <!-- Gör en dropdown med hjälp av <select> -->
+                <label for="htmltips"><strong>5 quick HTML tips</strong></label>
+                <br>
+                <select name="htmltips" id="htmldropdown">
+                    <option value="väljtips" disabled selected hidden>Click to see the tips</option>
+                    <option value="tip1">1. Use Emmet: li*5 → creates 5 &lt;li&gt;&lt;/li&gt;</option>
+                    <option value="tip2">2. Type ! + Tab → generates a full HTML5 boilerplate</option>
+                    <option value="tip3">3. Wrap text in &lt;a&gt; + Tab → quickly make links</option>
+                    <option value="tip4">4. Use alt="" in &lt;img&gt; → improves accessibility & SEO</option>
+                    <option value="tip5">5. Use semantic tags (&lt;header&gt;, &lt;main&gt;, &lt;footer&gt;) → cleaner structure</option>
+                </select>
+            </div>
+
+            <!-- Skapa en knapp, om du vill maximera semantisk betydelse så kan man lägga en article inuti en button -->
+            <div id="exercisefive" class="text-white">
+                <button class="btn">
+                    <article><a href="#">This is a button with a link to an article</a></article>
+                </button>
+            </div>
+
+            <!-- Gör innehållet osynligt -->
+            <div id="exercisesix">You can't see me!</div>
+
+            <!-- Gör bokstäverna i olika färger -->
+            <div id="exerciseseven">
+                <p><b>
+                    I'm from 
+                    <span class="blue">S</span>
+                    <span class="yellow">w</span>
+                    <span class="blue">e</span>
+                    <span class="yellow">d</span>
+                    <span class="blue">e</span>
+                    <span class="yellow">n</span>
+                    <span class="blue">.</span>
+                </b></p>
+                <hr>
+            </div>
+
+            <!-- div's hamnar naturligt på en ny rad, gör så att dessa 
+             ligger bredvid varandra horisontellt istället -->
+            <div class="horizontal-divs">
+                <div>This is</div>
+                <div>one line.</div>
+            </div>
+
+            <!-- repetera med följande kod -->
+            <div class="horizontal-divs">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>K</div>
+                <div>L</div>
+                <div>M</div>
+                <div>N</div>
+                <div>O</div>
+                <div>P</div>
+                <div>Q</div>
+                <div>R</div>
+                <div>S</div>
+                <div>T</div>
+                <div>U</div>
+                <div>V</div>
+                <div>W</div>
+                <div>X</div>
+                <div>Y</div>
+                <div>Z</div>
+            </div>
+
+            <div id="exercise2">
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+                <div>K</div>
+                <div>L</div>
+                <div>M</div>
+                <div>N</div>
+                <div>O</div>
+                <div>P</div>
+                <div>Q</div>
+                <div>R</div>
+                <div>S</div>
+                <div>T</div>
+                <div>U</div>
+                <div>V</div>
+                <div>W</div>
+                <div>X</div>
+                <div>Y</div>
+                <div>Z</div>
+            </div>
+
+            <!-- replikera layouts -->
+            <div id="container-wrapper">
+                <div class="item">A</div>
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div id="last-item" class="item">E</div>
+            </div>
+
+            <div id="num-container">
+                <div class="num-item">1</div>
+                <div class="num-item">2</div>
+                <div class="num-item">3</div>
+                <div class="num-item">4</div>
+                <div class="num-item">5</div>
+                <div class="num-item">6</div>
+                <div class="num-item">7</div>
+                <div class="num-item">8</div>
+                <div class="num-item">9</div>
+                <div class="num-item">10</div>
+            </div>
+
+            <div id="one-container">
+                <div class="one-item">1</div>
+                <div class="one-item">1</div>
+                <div class="one-item">1</div>
+                <div class="bottom-item">1</div>
+                <div class="bottom-item">1</div>
+                <div class="bottom-item">1</div>
+            </div>
+
+            <div id="scramble-container">
+                <div class="scramble-item">
+                    <div class="p-left">left</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-center">center</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-right">right</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-center">center</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-left">left</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-center">center</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-right">right</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-left">left</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-center">center</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-right">right</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-center">center</div>
+                </div>
+                <div class="scramble-item">
+                    <div class="p-left">left</div>
+                </div>
+            </div>
+
+            <!-- Exercise 9 med bara grid -->
+            <div id="exercise9">
+                <div class="group">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+
+            <!-- Exercise 9 med flex kolla efter lektion -->
+            <div id="exercise9two">
+                <div class="group-two">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group-two">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group-two">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+
+                <div class="group-two">
+                    <div>1</div>
+                    <div>2.1</div>
+                    <div>2.2</div>
+                    <div>2.3</div>
+                    <div>3</div>
+                    <div>4</div>
+                </div>
+            </div>
+            
+        </main>
+    </body>
+</html>

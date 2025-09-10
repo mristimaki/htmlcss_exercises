@@ -1,0 +1,292 @@
+div {
+    padding: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(48, 209, 112);
+}
+
+.text-white {
+    color: white;
+    font-size: 19px;
+}
+
+.headers{
+    font-size: 30px;
+}
+
+.horizontal-divs {
+    display: flex;
+}
+
+.nav-links {
+    margin-left: 5rem;
+    padding: 0.75rem;
+}
+
+#nav-list {
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    align-content: center;
+}
+
+#exercise2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1rem 1rem 1rem 1rem;
+}
+
+#exerciseone {
+    background-color: rgb(146, 193, 171);
+    padding: 0.7rem;
+}
+
+#exercisetwo {
+    background-color: rgb(109, 157, 135);
+    padding: 0.7rem;
+}
+
+#exercisethree {
+    background-color: rgb(78, 110, 96);
+    padding: 0.7rem;
+}
+
+#exercisefour {
+    background-color: rgb(105, 162, 138);
+    padding: 0.7rem;
+}
+
+#exercisefive {
+    background-color: rgb(104, 172, 121);
+    padding: 0.7rem;
+}
+
+#exercisefive button {
+    cursor: pointer;
+    padding: 0.75rem;
+}
+
+#exercisesix {
+    display: none;
+}
+
+#exerciseseven {
+    background-color: rgb(71, 122, 105);
+    padding: 0.7rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+}
+
+.links {
+    margin-bottom: 20px;
+}
+
+.links a {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(60, 104, 84);
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: white;
+}}
+
+#htmldropdown {
+    padding: 0.5rem;
+}
+
+.blue {
+    color: rgb(28, 28, 150);
+}
+
+.yellow {
+    color: rgb(244, 244, 49);
+}
+
+
+/* Om man vill säkerställa så att inga element hamnar utanför
+containern så använder man flex-wrap */
+#container-wrapper {
+    background-color: rgb(155, 192, 176);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.item {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+#last-item {
+    margin-left: auto;
+}
+/*
+Denna övning (ovan) hade man också kunnat lösa med en extra
+tom div mellan D och E i html och göra denna kod med bara grid:
+#e-box-to-right {
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem 1rem 1fr 1rem
+}
+*/
+
+
+#num-container {
+    background-color: rgb(155, 192, 176);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+
+/*
+I'm trying to get all the items to be placed to the right
+but I still cannot figure it out.
+*/
+.num-item {
+    display: flex;
+    background-color: white;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    width: 170px;
+    height: 30px;
+}
+
+#one-container {
+    background-color: rgb(155, 192, 176);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Det här bestämmer ytan horisontellt */
+    gap: 5px;
+}
+
+.one-item {
+    background-color: white;
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: center;
+}
+
+.bottom-item {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Den här övningen var jättesvår för mig, jag tror jag testade
+upp mot 10 olika variationer! Men det som var största problemet hela tiden
+var att jag trodde att man bara kunde använda grid ELLER flex i varje
+enskilt element! */
+#scramble-container {
+    background-color: rgb(155, 192, 176);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(12, 50px);
+    gap: 5px;
+}
+
+/* you can also use "grid-column: 1 / -1;" to span all columns" */
+.scramble-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+}
+
+.p-left {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.p-center {
+    background-color: white;
+    padding: 10px;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.p-right {
+    background-color: white;
+    padding: 10px;
+    grid-column: 3;
+    display: flex;
+    justify-content: center;
+}
+
+/* Kolla upp denna och nr 8 efter lektionen! */
+/* exercise 9 med grid */
+#exercise9 {
+    display: grid;
+    background-color: white;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid rgb(155, 192, 176);
+    padding: 0.2rem;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+#exercise9 > .group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgb(155, 192, 176);
+    padding: 0.2rem;
+    gap: 0.2rem;
+}
+
+#exercise9 > .group > div {
+    background-color: rgb(155, 192, 176);
+    text-align: center;
+}
+
+#exercise9 > .group > div:ntn-child(1){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#exercise9 > .group > div:ntn-child(5){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#exercise9 > .group > div:ntn-child(6){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* exercise 9 med flex kolla efter lektion */
+#exercise9two {
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(155, 192, 176);
+    margin-top: 0.5rem;
+    gap: 0.2rem;
+}
+
+#exercise9two > .group-two {
+    display: flex;
+    border: 1px solid rgb(155, 192, 176);
+    padding: 0.2rem;
+    gap: 0.2rem;
+}
+
+#exercise9two > .group-two > div {
+    background-color: rgb(155, 192, 176);
+    text-align: center;
+}
