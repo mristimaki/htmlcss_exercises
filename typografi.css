@@ -21,13 +21,13 @@ h3 {
 
 
 /* Mediaqueries -------------------------------*/
-@media only screen and(max-width: 320px) {
+@media only screen and (max-width: 320px) {
     p {
         font-size: 0.5rem;
     }
 }
 
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     p {
         font-size: 0.75rem;
     }
