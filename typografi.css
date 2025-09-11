@@ -7,11 +7,12 @@
 p {
     font-family: "Source Sans 3", sans-serif;
     font-size: 1.1rem;
+    margin-bottom: 0.5rem;
 }
 
 h1, h2, h3 {
     font-family: "Playfair Display", serif;
-    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -36,8 +37,58 @@ nav {
 }
 
 #main-wrapper {
-    margin-left: 1rem;
+    margin: 1rem;
 }
+
+blockquote {
+    display: flex;
+    justify-content: center;
+}
+
+.quotes {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 80%;
+}
+
+cite {
+    margin-top: 0.5rem;
+}
+
+.intro-section {
+    background-color: lightblue;
+}
+
+.typography-section {
+    background-color: lightskyblue;
+}
+
+.linguistics-section {
+    background-color: lightcyan;
+}
+
+.digital-typography-section {
+    background-color: lightgoldenrodyellow;
+}
+
+.conclusion-section {
+    background-color: lightgray;
+}
+
+.final-quote {
+    background-color: lightslategray;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Mediaqueries -------------------------------*/
 @media only screen and (max-width: 320px) {
